@@ -2,18 +2,43 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Neil Evans</title>
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link href="css/main.css" rel="stylesheet">
+    <link href="styles/main.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.3/moment-with-locales.min.js" integrity="sha512-vFABRuf5oGUaztndx4KoAEUVQnOvAIFs59y4tO0DILGWhQiFnFHiR+ZJfxLDyJlXgeut9Z07Svuvm+1Jv89w5g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript">
+        var imageURLs = [
+            "images/wavingHandTransparent.gif"
+            , "https://media0.giphy.com/avatars/krikrak/kM3Igdj6ZFmW.gif"
+            , "https://media0.giphy.com/media/jj9YLhuhuRylNV7JN7/giphy.gif"
+            , "https://media4.giphy.com/media/3o7WTQqsDe6gyLv0hG/giphy.gif"
+            , "https://media.giphy.com/media/2aQS3AHfvvfIkSdbFM/giphy.gif"
+        ];
+        var imageSourceURLs = [
+            "images/wavingHandTransparent.gif"
+            , "https://giphy.com/krikrak"
+            , "https://giphy.com/gifs/SpiderManMovie-spiderman-spidermannowayhome-spidermanmovie-jj9YLhuhuRylNV7JN7"
+            , "https://giphy.com/gifs/animation-selfie-iphone-3o7WTQqsDe6gyLv0hG"
+            , "https://giphy.com/gifs/trippy-gif-artist-ericaofanderson-2aQS3AHfvvfIkSdbFM"
+        ]
+        function getImageTag() {
+            var randomIndex = Math.floor(Math.random() * imageURLs.length);
+            var img = '<a href=\"' + imageSourceURLs[randomIndex] + '\" target=\"_blank\"> <img src=\"';
+            img += imageURLs[randomIndex];
+            img += '\" class=\"home-img img-fluid\" alt=\"Welcome Image #' + (randomIndex+1) + '\" width=\"448px\" height=\"448px\" style=\"margin: 15% 0 0 0;\"/></a>';
+            return img;
+        }
+    </script>
 </head>
 <body>
 <div class="container-fluid">
     <div class="row">
         <nav class="navbar navbar-expand-md justify-content-start bg-dark navbar-dark">
             <!-- Brand -->
-            <a href="index.html"> <img class="navbar-brand" src="IS117_LogoIcon.png" alt="Icon" width="32" height="40"></a>
-            <a class="navbar-brand" href="index.html">Neil Evans</a>
+            <a href="index.html"> <img class="navbar-brand" src="images/NME_Logo.png" alt="Icon" width="64px" height="72px"></a>
+            <a class="navbar-brand" style="font-size: 24px" href="index.html">Neil Evans</a>
             <!-- Responsive Button for the smaller menu -->
             <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
@@ -30,15 +55,15 @@
                             PORTFOLIO
                         </a>
                         <div class="dropdown-menu dropdown-menu-dark">
-                            <a class="dropdown-item" href="#">PERSONAL</a>
-                            <a class="dropdown-item" href="#">PROFESSIONAL</a>
+                            <a class="dropdown-item" href="personal-portfolio.html">PERSONAL</a>
+                            <a class="dropdown-item" href="professional-portfolio.html">PROFESSIONAL</a>
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">BLOG</a>
+                        <a class="nav-link" href="blog.html">BLOG</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">ABOUT</a>
+                        <a class="nav-link" href="about.html">ABOUT</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contact.html">CONTACT</a>
@@ -46,24 +71,31 @@
                 </ul>
             </div>
         </nav>
-        <div class="row px-5">
-            <div class="col-md-4 order-1 text-center align-self-center">
-                <img src="IS117HomeImage.png" class="img-fluid" alt="Welcome Image" width="384" height="384">
-            </div>
-            <div class="col-md p-4 order-2">
-                <h1 class="font-weight-bold text-center my-2">WELCOME TO MY WEBSITE</h1>
-                <p class="text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa eget egestas purus viverra. Lacus suspendisse faucibus interdum posuere lorem ipsum dolor sit amet. Quis imperdiet massa tincidunt nunc pulvinar sapien et ligula. Mattis vulputate enim nulla aliquet porttitor lacus. Convallis tellus id interdum velit laoreet. Dignissim diam quis enim lobortis scelerisque. Senectus et netus et malesuada fames ac turpis egestas sed. Amet nisl purus in mollis nunc sed id. In iaculis nunc sed augue lacus viverra vitae. Lorem mollis aliquam ut porttitor leo a. Aliquet nibh praesent tristique magna sit amet purus.</p>
-                <p class="text-left">Diam quam nulla porttitor massa id neque aliquam. Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at. Eget velit aliquet sagittis id consectetur. Egestas egestas fringilla phasellus faucibus scelerisque eleifend donec. Tristique magna sit amet purus. Massa vitae tortor condimentum lacinia quis vel. Sem nulla pharetra diam sit amet nisl suscipit adipiscing bibendum. Ac turpis egestas maecenas pharetra convallis posuere morbi. Blandit aliquam etiam erat velit. Amet volutpat consequat mauris nunc. Massa tincidunt dui ut ornare lectus sit amet est placerat. Elit duis tristique sollicitudin nibh sit amet commodo nulla facilisi. Lacus laoreet non curabitur gravida arcu ac. Proin nibh nisl condimentum id venenatis a condimentum. Duis tristique sollicitudin nibh sit amet commodo nulla facilisi. Neque aliquam vestibulum morbi blandit cursus. Semper quis lectus nulla at volutpat diam. Risus viverra adipiscing at in tellus integer feugiat scelerisque varius. Eget velit aliquet sagittis id consectetur purus ut. Consectetur adipiscing elit ut aliquam purus sit amet.</p>
-            </div>
+        <div class="container">
+            <main class="home">
+                <h1 class="font-weight-bold text-center my-3">WELCOME TO MY WEBSITE</h1>
+                <p class="pt-3" style="font-size: 18px; margin-left: 3%;">You are on the home page of my website. For the most part, this page will remain the same until I can come up with something better for this page. This website will be updated every so often when there is a reason to change it (whether it be a change in the CSS or just an entire website revamp. It will evolve as I evolve as a person, so keep an eye out for update! Also, if you find any issues/bugs with the website, please let me know via the contact page.</p>
+                <p style="font-size: 18px; margin-left: 3%;">If you want to take a look at the sitemap, you can click on <a href="images/NeilEvans_SITEMAP_04_29_2022.png" target="_blank" class="linkMagic">me</a> to view it in a new tab. This will also be updated every so often as well until I either remove the link, forget to update it, or just completely revamp the entire home page. As you also might see (or not see depending on if you're playing around), if you reload the webpage, the image on the left will change at random (thank you <a href="https://stackoverflow.com/questions/2777479/display-random-image-when-page-loads-without-utilizing-onload-in-the-body-tag" target="_blank" class="linkMagic">StackOverflow and JavaScript</a> (also clickable)). Also via the power of JavaScript, I have made it so that when you click on the image, it takes you to the source of the image (or as close to it as possible). There is also a box shadow that is generated while hovering over the images which is pretty neat.</p>
+                <p style="font-size: 18px; margin-left: 3%;"> The final thing I can say about this page is the card you see below. The card will be updated whenever my most visited website changes. In the future, I might add more cards or just switch out these cards for either different cards, or just replace it with something completely different. The entire layout of this page might change in the future and you might even be reading this through the Wayback Machine.</p>
+            </main>
+            <aside class="home">
+                <script type="text/javascript">
+                    document.write(getImageTag());
+                </script>
+            </aside>
         </div>
-        <div class="col-sm-6 mx-auto pb-5">
+        <div class="col-sm-6 mx-auto my-3 pt-5 pb-5">
             <div class="card">
-                <div class="card-header">
+                <div class="card-header text-center">
                     Featured - Most Visited Website by Neil
                 </div>
-                <div class="card-body">
+                <div class="card-body text-center">
                     <h5 class="card-title">The Verge - Tech News</h5>
-                    <p class="card-text">As of April 6<sup>th</sup>, 2022, this is the site I visit most frequently.</p>
+                    <p class="card-text">As of <span id="todaysDate"></span>, 2022, this is the site I visit most frequently.</p>
+                    <script type = "text/JavaScript">
+                        let a = moment().format('MMMM Do');
+                        document.getElementById("todaysDate").innerHTML = a;
+                    </script>
                     <a href="https://theverge.com/tech" target="https://theverge.com/tech" class="btn btn-primary">Open Site</a>
                 </div>
             </div>

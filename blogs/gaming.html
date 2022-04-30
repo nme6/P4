@@ -1,0 +1,91 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Neil Evans - Gaming Blog</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="../styles/main.css" rel="stylesheet">
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <nav class="navbar navbar-expand-md justify-content-start bg-dark navbar-dark">
+            <!-- Brand -->
+            <a href="../index.html"> <img class="navbar-brand" src="../images/NME_Logo.png" alt="Icon" width="64px" height="72px"></a>
+            <a class="navbar-brand" style="font-size: 24px" href="index.html">Neil Evans</a>
+            <!-- Responsive Button for the smaller menu -->
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav ms-auto">
+                    <!-- Links -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">HOME</a>
+                    </li>
+                    <!-- Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            PORTFOLIO
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-dark">
+                            <a class="dropdown-item" href="personal-portfolio.html">PERSONAL</a>
+                            <a class="dropdown-item" href="professional-portfolio.html">PROFESSIONAL</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../blog.html">BLOG</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../about.html">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../contact.html">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+        <h1 class="font-weight-bold text-center my-3">GAMING</h1>
+        <p class="text-center" style="font-size: 18px;">Below are links to my blog posts about the current PC gaming environment and console gaming environment respectively. </p>
+        <p class="text-center" style="font-size: 18px; margin-top:-15px;">Both blog posts will cover the current popular games, popular parts/consoles, and current news about both.</p>
+        <!-- Create 2 cards for the blog posts -->
+        <div class="row">
+            <div class="col-md-6 pb-5">
+                <div class="card">
+                    <img class="card-img-top" src="https://www.pcworld.com/wp-content/uploads/2021/11/IMG_20190615_214330-2.jpg" alt="PC Gaming" height="355px">
+                    <div class="card-body">
+                        <h5 class="card-title">PC Gaming</h5>
+                        <p class="card-text">Read all about the latest news and all things PC Gaming!</p>
+                        <a href="pc-gaming.html" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 pb-5">
+                <div class="card">
+                    <img class="card-img-top" src="https://www.techadvisor.com/cmsdata/slideshow/3647133/best_game_console_2022_thumb1200_16-9.jpg" alt="Console Gaming" height="355px">
+                    <div class="card-body">
+                        <h5 class="card-title">Console Gaming</h5>
+                        <p class="card-text">Read all about the latest news and all things PC Gaming!</p>
+                        <a href="console-gaming.html" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer page-footer font-small ">
+        <div class="container">
+            <div class="row">
+                <span class="text-muted">&copy; Neil Evans, 2022 |  Terms Of Use  |  Privacy Policy</span>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<!-- Javascript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+</script>
+
+</body>
+</html>

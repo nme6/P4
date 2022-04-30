@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Neil Evans - Blogs</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="styles/main.css" rel="stylesheet">
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <nav class="navbar navbar-expand-md justify-content-start bg-dark navbar-dark">
+            <!-- Brand -->
+            <a href="index.html"> <img class="navbar-brand" src="images/NME_Logo.png" alt="Icon" width="64px" height="72px"></a>
+            <a class="navbar-brand" style="font-size: 24px" href="index.html">Neil Evans</a>
+            <!-- Responsive Button for the smaller menu -->
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav ms-auto">
+                    <!-- Links -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">HOME</a>
+                    </li>
+                    <!-- Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            PORTFOLIO
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-dark">
+                            <a class="dropdown-item" href="personal-portfolio.html">PERSONAL</a>
+                            <a class="dropdown-item" href="professional-portfolio.html">PROFESSIONAL</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">BLOG</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+        <h1 class="font-weight-bold text-center my-3">BLOGS</h1>
+        <div class="row">
+            <div class="col-md-4 mx-auto pb-5">
+                <div class="card" style="width: 26rem;">
+                    <img class="card-img-top" src="images/TechnologyImage.png" alt="Technology Image" width="512px">
+                    <div class="card-body">
+                        <h5 class="card-title">Technology</h5>
+                        <p class="card-text">View my technology blog and stay up to date with all things tech!</p>
+                        <a href="blogs/technology.html" class="btn btn-primary">Go to blog</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mx-auto pb-5">
+                <div class="card" style="width: 26rem;">
+                    <img class="card-img-top" src="images/GamingImage.png" alt="Gaming Image" width="512px">
+                    <div class="card-body">
+                        <h5 class="card-title">Gaming</h5>
+                        <p class="card-text">View my gaming blog and stay up to date with all things gaming!</p>
+                        <a href="blogs/gaming.html" class="btn btn-primary">Go to blog</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer page-footer font-small ">
+        <div class="container">
+            <div class="row">
+                <span class="text-muted">&copy; Neil Evans, 2022 |  Terms Of Use  |  Privacy Policy</span>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<!-- Javascript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+</script>
+
+</body>
+</html>

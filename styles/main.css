@@ -1,0 +1,95 @@
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #dbf2ff;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.75rem;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    font-weight: 900;
+    font-style: normal;
+    src: url("/fonts/SF-Pro-Display-Bold.otf") format('opentype');
+}
+
+a.linkMagic {
+    text-decoration: none;
+    color: black;
+}
+
+a.linkMagic:hover {
+    text-shadow: 1px 1px 2px gray;
+    text-decoration: underline;
+}
+
+div.card {
+    text-decoration: none;
+}
+
+.home-img {
+    border-radius: 12.5%;
+    outline: 4px solid #1e1e1e;
+    outline-offset: -4px;
+}
+
+.home-img:hover {
+    box-shadow: 10px 10px 20px dimgray;
+}
+
+/* Create media queries for 4 different screen sizes (mobile, tablet, laptop, desktop) */
+/* Mobile  (max size of about 7 inches) */
+@media screen and (max-width: 600px) {
+    aside.home {
+        width: 100%;
+        clear: both;
+    }
+
+    main.home {
+        width: 100%;
+        float: none;
+    }
+}
+
+/* Tablet (about 7 inches to about 12 inches) */
+@media screen and (min-width: 601px) and (max-width: 1200px) {
+    aside.home {
+        width: 100%;
+        clear: both;
+    }
+
+    main.home {
+        width: 100%;
+        float: none;
+    }
+}
+
+/* Laptop (Screen size of 12 inches to 17 inches) */
+@media screen and (min-width: 1201px) and (max-width: 1632px) {
+    aside.home {
+        width: 30%;
+        clear: left;
+    }
+
+    main.home {
+        width: 70%;
+        float: right;
+    }
+}
+
+/* Desktop (Screen size of 18+ inches) */
+@media screen and (min-width: 1633px) {
+    aside.home {
+        width: 20%;
+        clear: left;
+    }
+
+    main.home {
+        width: 80%;
+        float: right;
+    }
+}
