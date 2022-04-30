@@ -8,6 +8,17 @@
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="styles/main.css" rel="stylesheet">
+    <style>
+        /* DEVELOPER: Neil Evans, IS117-004, Spring 2022 */
+        .imgLink {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .imgLink:hover {
+            box-shadow: 7px 7px 20px dimgray;
+        }
+    </style>
 </head>
 <body>
 <div class="container-fluid">
@@ -51,7 +62,32 @@
     </div>
     <div class="container">
         <h1 class="font-weight-bold text-center my-3">PROFESSIONAL PORTFOLIO</h1>
+        <div class="row" style="width: 100%">
+            <div style="float: none; width: 50%;">
+                <p style="font-size: 18px;">
+                    My name is Neil Evans. I am currently an undergraduate student at New Jersey Institute of Technology. I am pursuing a Bachelor of Science
+                    degree majoring in Information Technology. I do not have a specific specialization in mind when it comes to the degree. </p>
+                <p style="font-size: 18px;">I am currently employed as Teaching Assisstant at NJIT for the course IT201 (Information Design Techniques).
+                    I am also a general member of the NJIT <a href="https://njitsac.org" target="_blank" class="linkMagic">Student Activities Council</a> (SAC for short).
+                </p>
+            </div>
+            <div style="float: right; width: 50%;">
+                <a href="https://nme6-prod.herokuapp.com/Project/login.php" target="_blank" class="imgLink">
+                    <img class="img-fluid mx-auto" src="images/IT202Project.png" alt="Screenshot of my IT202 site">
+                </a>
+            </div>
+            <p style="font-size: 18px;" class="pb-5">The image above is one of the few projects I have made while here at NJIT. You can click on it to be redirected to the website in a new tab.
+                I also wrote a <a href="files/Neil%20Evans%20-%20HUM102%20Research%20Paper%20-%20Google%20vs%20Oracle.pdf" target="_blank" class="linkMagic">10-12 page</a> research
+                paper on the Google vs. Oracle court case that was going on at the time during my freshman year here at NJIT. Below, you can find two buttons that will take you to
+                different pages. One of the buttons will take you to my LinkedIn page, and the other will take you directly to a PDF of my current resume.
+            </p>
+
+            <div class="d-grid gap-3 d-md-block col-5 mx-auto pb-5">
+                <a href="https://www.linkedin.com/in/neil-evans-1a02b5239" target="_blank"><button class="btn btn-primary mx-auto" style="width: 250px;">Neil's LinkedIn</button></a>
+                <a href="files/Neil%20Evans%20-%20Resume%20(April%202022).pdf" target="_blank"><button class="btn btn-primary mx-auto" style="width: 250px;">Resume (PDF)</button></a>
+            </div>
     </div>
+</div>
     <footer class="footer page-footer font-small ">
         <div class="container">
             <div class="row">
