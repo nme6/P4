@@ -16,6 +16,18 @@
         .imgLink:hover {
             box-shadow: 7px 7px 20px dimgray;
         }
+
+        @media screen and (max-width: 1200px) {
+            #MacProFont {
+                font-size: 2.5em;
+            }
+        }
+
+        @media screen and (min-width: 1201px) {
+            #MacProFont {
+                font-size: 5em;
+            }
+        }
     </style>
 </head>
 <body>
@@ -68,7 +80,7 @@
         <p class="text-center" style="font-size: 18px;">The rumors originally planned to be written here were released as the Mac Studio by Apple during their
         March Event so.... there are no rumors left that I can find on the internet. The only thing we do know from Apple themselves is that they are working on an
         Apple Silicon version of the only product they have left to transition:</p>
-        <h1 class="font-weight-bold text-center my-3" style="font-family: 'SF Pro Display'; font-size: 80px;">Mac Pro</h1>
+        <h1 class="font-weight-bold text-center my-3" id="MacProFont" style="font-family: 'SF Pro Display';">Mac Pro</h1>
         <a href="https://apple.com/mac-pro/" target="_blank" class="imgLink">
             <img src="https://images.macrumors.com/t/yidO1gRHq4spRRcXyAF6Dz00Cuk=/800x0/smart/article-new/2013/09/mac_pro_2019_roundup_header-b.png" alt="Mac Pro" class="img-fluid mx-auto d-block" width="50%">
         </a>

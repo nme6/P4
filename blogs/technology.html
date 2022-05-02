@@ -8,13 +8,25 @@
     <link href="../styles/main.css" rel="stylesheet">
     <style>
         /* DEVELOPER: Neil Evans, IS117-004, Spring 2022 */
-        .widthChange {
-            width: 45%;
-            margin-top: 2%;
-        }
+        @media screen and (max-width: 1200px) {
+            .widthChange {
+                width: 45%;
+                margin-top: 0;
+            }
 
-        .pcStyling {
-            margin-top: 95px;
+            .pcStyling {
+                margin-top: 4%;
+            }
+        }
+        @media screen and (min-width: 1201px) {
+            .widthChange {
+                width: 45%;
+                margin-top: 2%;
+            }
+
+            .pcStyling {
+                margin-top: 95px;
+            }
         }
     </style>
 </head>
@@ -63,7 +75,7 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="card">
-                    <img class="card-img-top mx-auto widthChange" src="../images/AppleLogo.png" alt="Apple Logo" height="350px">
+                    <img class="card-img-top mx-auto widthChange" src="../images/AppleLogo.png" alt="Apple Logo" height="50%">
                     <div class="card-body">
                         <h5 class="card-title">Apple Leaks and Rumors</h5>
                         <p class="card-text">Read about all the juicy leaks and rumors for Apple's latest products!</p>
@@ -71,7 +83,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 pcStyling">
+            <div class="col-md-6 pcStyling pb-5">
                 <p style="font-size: 18px;">This is going to be a rabbit hole of pages so apologies ahead of time. Anyway, this is my technology blog and I will be talking about interesting technology to myself at the time of viewing.
                     As of right now, the most interesting stories are all the leaks and rumors coming out of Apple (especially rumors when it comes to the iPhone 14 and new Mac(s) coming out later this year).</p>
                 <br>

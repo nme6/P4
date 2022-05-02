@@ -18,6 +18,18 @@
         .imgLink:hover {
             box-shadow: 7px 7px 20px dimgray;
         }
+
+        @media screen and (max-width: 1200px) {
+            .buttonStyle {
+                width: 100%;
+            }
+        }
+
+        @media screen and (min-width: 1201px) {
+            .buttonStyle {
+                width: 32.99%;
+            }
+        }
     </style>
     <style>
         /* DEVELOPER: Neil Evans, IS117-004, Spring 2022 */
@@ -186,7 +198,7 @@
                 </a>
             </div>
             <div class="col-md-6">
-                <p style="font-size: 18px;">
+                <p style="font-size: 18px; padding-top: 5%;">
                     This personal portfolio is really going to be anything but a portfolio page. On the left of this paragraph, you can see the MCU Timeline I updated.
                     The original was made by <a href="https://www.reddit.com/user/FoorAJ" target="_blank" class="linkMagic">FoorAJ</a> and I updated it to be more accurate and also include movies that had became
                     MCU canon due to the multiverse becoming a large new component to the MCU. This will most likely be updated after Doctor Strange in the Multiverse of Madness is released.
@@ -229,9 +241,9 @@
             </div>
             <!-- Slideshow Carousel code provided by W3 Schools, tweaked by Neil Evans-->
             <div class="d-grid gap-3 d-md-block col-8 mx-auto">
-                <a href="https://pcpartpicker.com/user/Pr0tatoPC/saved/#view=WhZzP6" target="_blank"><button class="btn btn-primary" style="width: 250px;">My Gaming PC Build</button></a>
-                <button class="btn btn-primary" style="width: 250px;" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">Pet Pictures</button>
-                <a href="files/Neil%20Evans%20-%20Resume%20(April%202022).pdf" target="_blank"><button class="btn btn-primary" style="width: 250px;">Resume (PDF)</button></a>
+                <button class="btn btn-primary buttonStyle" onclick="window.open('https://pcpartpicker.com/user/Pr0tatoPC/saved/#view=WhZzP6', '_blank')" type="button">My Gaming PC Build</button>
+                <button class="btn btn-primary buttonStyle" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">Pet Pictures</button>
+                <button class="btn btn-primary buttonStyle" onclick="window.open('files/Neil%20Evans%20-%20Resume%20(April%202022).pdf', '_blank')" type="button">Resume (PDF)</button>
             </div>
             <div id="myModal" class="modal pb-5">
                 <span class="close cursor" onclick="closeModal()">&times;</span>
